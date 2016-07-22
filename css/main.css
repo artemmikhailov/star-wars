@@ -1,0 +1,9 @@
+.img-thumbnail {
+    width : 100%;
+    margin-bottom: 12px;
+}
+
+.list-group-item {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
