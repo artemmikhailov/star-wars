@@ -187,6 +187,7 @@
      * @returns {Promise}
      */
     function getFilm(url) {
+        url = url.replace('http', 'https');
         return fetch(url)
             .then(response => {
                 return response.json();
@@ -203,7 +204,7 @@
      * @returns {Promise}
      */
     function loadHero(id) {
-        return fetch('http://swapi.co/api/people/' + id + '/')
+        return fetch('https://swapi.co/api/people/' + id + '/')
             .then(response => {
                 return response.ok ? response.json() : Promise.reject();
             })
